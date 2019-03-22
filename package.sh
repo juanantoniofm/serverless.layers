@@ -83,7 +83,7 @@ fi
 # I'm using a different AWS_PROFILE to upload my layers
 export AWS_PROFILE=LayerUploader
 
-LAYER_PREFIX=Klayers-
+LAYER_PREFIX=AWSLambda-Layer-
 LAYER_RUNTIME_NODOT="${LAYER_RUNTIME//.}"  # removes . between 3.7
 ZIP_NAME=$LAYER_PREFIX$LAYER_RUNTIME_NODOT-$PACKAGE.zip
 LAYER_NAME=$LAYER_PREFIX$LAYER_RUNTIME_NODOT-$PACKAGE
